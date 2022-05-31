@@ -3,14 +3,6 @@ const add = document.querySelector(".add-book");
 const body = document.querySelector("body");
 const container = document.querySelector(".container");
 
-//variables used to create form elements
-// let bookTitle;
-// let bookAuthor;
-// let year;
-// let submit;
-// let exit;
-// let form;
-
 //array to hold books (objects)
 const books = [];
 

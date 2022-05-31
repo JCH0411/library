@@ -4,12 +4,12 @@ const body = document.querySelector("body");
 const container = document.querySelector(".container");
 
 //variables used to create form elements
-let bookTitle;
-let bookAuthor;
-let year;
-let submit;
-let exit;
-let form;
+// let bookTitle;
+// let bookAuthor;
+// let year;
+// let submit;
+// let exit;
+// let form;
 
 //array to hold books (objects)
 const books = [];
@@ -103,7 +103,7 @@ function createform() {
 
 //function to add book to main container
 function addBook(title, author, year) {
-  
+
   //creating new book for library
   let newbook = document.createElement("div");
   newbook.classList.add("container-book");

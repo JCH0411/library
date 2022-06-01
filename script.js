@@ -4,7 +4,7 @@ const body = document.querySelector("body");
 const container = document.querySelector(".container");
 
 //array to hold books (objects)
-const books = [];
+const books = [{title: "Game of Thrones", author: "George R.R. Martin's", year: 1996}, {title: "The Lord of The Rings", author: "J.R.R Tolkien", year: 1954}];
 
 //Object of book information
 function BookInfo(title, author, year) {
@@ -12,6 +12,13 @@ function BookInfo(title, author, year) {
   this.author = author;
   this.year = year;
 }
+
+//event to load up any books already in the array
+window.addEventListener("load" , (event) => {
+  for(let i = 0; i < books.length; i++){
+    addBook(books[i].title, books[i].author, books[i].year)
+  }
+})
 
 //event listener to add a new book to library
 add.addEventListener("click", (event) => {
